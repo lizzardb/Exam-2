@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam #2 - Liz Brown</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2problem.css" />
+    <script src="js/Exam2problem.js"></script>
+</head>
+
+<body onload="GoDark()">
+
+<body>
+    <section id="section1" class="section1">
+        <h1>Exam #2</h1>
+        <hr>
+        <select onchange="OptionsChange()" id="options">
+            <option>Please choose an option</option>
+            <option>Display the Category List</option>
+            <option>Add a Product Category</option>
+            <option>Update a Category Description</option>
+            <option>Delete a Product Category</option>
+            <option>About Me</option>
+        </select>
+    </section>
+    <br>
+    <section id="section2" class="section2">
+        <button onclick="DisplayList()" id="listdisplay">Display the Category List</button>
+        <br>
+        <br>
+        <label id="result0">The category list will display here.</label>
+    </section>
+    <section id="section3" class="section3">
+        <label>Please enter a category name:</label>
+        <input type="text" id="catname">
+        <br>
+        <br>
+        <label>Please enter a category description:</label>
+        <input type="text" id="catdescript">
+        <br>
+        <br>
+        <button onclick="AddCategory()" id="categoryadd">Add a Product Category</button>
+        <br>
+        <br>
+        <label id="resultA">Results will display here.</label>
+    </section>
+    <section id="section4" class="section4">
+        <label>Please enter a category ID:</label>
+        <input type="text" id="catid">
+        <br>
+        <br>
+        <label>Please enter a category description:</label>
+        <input type="text" id="catdescript2">
+        <br>
+        <br>
+        <button onclick="UpdateCategory()" id="categoryupdate">Update a Category Description</button>
+        <br>
+        <br>
+        <label id="resultB">Results will display here.</label>
+    </section>
+    <section id="section5" class="section5">
+        <label>Please enter a category ID:</label>
+        <input type="text" id="catid">
+        <br>
+        <br>
+        <button onclick="DeleteCategory()" id="categorydelete">Delete a Category</button>
+        <br>
+        <br>
+        <label id="resultC">Results will display here.</label>
+    </section>
+    <section id="section6" class="section6">
+        <label>My name is Secret Agent Liz Brown. I could tell you more, but then I'd have to kill you.</label>
+        <br>
+        <br>
+        <label>Have a nice day!</label>
+    </section>
+
+
+</body>
+</html>
